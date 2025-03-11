@@ -32,7 +32,7 @@ A real-time IoT-based system to monitor soil health parameters (NPK, moisture, t
 ---
 
 ## 📂 Block Diagram  
-![Block Diagram](blockdiagram.png) *(upload your diagram image to GitHub and link it here)*  
+![Block Diagram](blockdiagram.png) 
 
 ### Block Diagram Description:  
 - **Sensors**: NPK, moisture, temperature.  
