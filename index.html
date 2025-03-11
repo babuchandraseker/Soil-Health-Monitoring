@@ -14,38 +14,48 @@
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
         }
         section {
             padding: 20px;
             max-width: 1000px;
             margin: auto;
         }
-        h2 {
-            color: #4CAF50;
+        .video-container, .block-diagram img {
+            width: 100%;
+            max-width: 800px;
         }
-        .video-container, .image-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        img {
-            width: 80%;
-            max-width: 600px;
-        }
-        a {
+        .download-btn {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
             text-decoration: none;
-            color: #007bff;
+            text-align: center;
         }
-        a:hover {
-            text-decoration: underline;
+        .download-btn:hover {
+            background-color: #333;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -55,12 +65,21 @@
     <h1>Soil Health Monitoring System</h1>
 </header>
 
-<section>
+<nav>
+    <a href="#about">About</a>
+    <a href="#video">Project Video</a>
+    <a href="#blockdiagram">Block Diagram</a>
+    <a href="#download">Download Files</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<section id="about">
     <h2>About The Project</h2>
-    <p>This project is designed to monitor soil health in real-time using IoT sensors. It detects NPK levels, moisture, temperature, and alerts nearby farmers if pesticides are detected. Blockchain technology ensures that the data is secured and tamper-proof.</p>
+    <p>This project is designed to monitor soil health in real-time using IoT sensors, AI, and Blockchain. 
+        It provides accurate data on NPK levels, moisture, temperature, and more.</p>
 </section>
 
-<section>
+<section id="video">
     <h2>Project Video Demonstration</h2>
     <div class="video-container">
         <video width="600" controls>
@@ -70,26 +89,27 @@
     </div>
 </section>
 
-<section>
+<section id="blockdiagram">
     <h2>Block Diagram of the System</h2>
-    <div class="image-container">
-        <img src="blockdiagram.png" alt="Block Diagram of Soil Health Monitoring System">
+    <div class="block-diagram">
+        <img src="blockdiagram.png" alt="Block Diagram" width="600">
     </div>
 </section>
 
-<section>
+<section id="download">
     <h2>Download Resources</h2>
-    <p><a href="Soil_Health_PPT_Template.pptx" download>📊 Download Project PPT</a></p>
-    <p><a href="Soil_Health_Report.pdf" download>📜 Download Project Report</a></p>
+    <a class="download-btn" href="Soil_Health_PPT_Template.pptx" download>Download Project PPT</a>
+    <a class="download-btn" href="Soil_Health_Report.pdf" download>Download Project Report</a>
 </section>
 
-<section>
-    <h2>Visit Our Website</h2>
-    <p><a href="https://babuchandraseker.github.io/Soil-Health-Monitoring/">🌱 Click here to visit the website</a></p>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Name:</strong> C. Deli Babu</p>
+    <p><strong>Email:</strong> babuchandraseker@gmail.com</p>
 </section>
 
 <footer>
-    © 2025 Soil Health Monitoring System. All Rights Reserved.
+    &copy; 2025 Soil Health Monitoring System. All Rights Reserved.
 </footer>
 
 </body>
